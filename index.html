@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .quote{
+        color:black;
+      }
+      body{
+        background-color: aqua;
+      }
+      .container{
+        color: blue;
+       background-color:white;
+       background-image:url( https://www.google.com/url?sa=i&url=https%3A%2F%2Fdisney.fandom.com%2Fwiki%2FSofia_the_First_%2528character%2529&psig=AOvVaw0jaiLrARp5cx_3Mo8ZM_T8&ust=1739962001827000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOjCiNqFzYsDFQAAAAAdAAAAABAE);
+        width: 20%;
+        margin: auto;
+        padding: 2%;
+      }
+      .form-field input, .form-field select, .form-field  textarea{
+        width: 100%;
+        padding: 10px 0px;
+      }
+      button{
+        width: 100%;
+        padding: 10px;
+       background-color: black; 
+       color: beige;
+      }
+      @media (max-width:576px){
+        .container{
+          width: 90%;
+          border-radius:10px ;
+        }
+      }
+        
+      
+    </style>
+</head>
+<body>
+  <h1 class="quote"> Application form </h1>
+    <form class="container" action="./login.html">
+      <h1>sign up</h1>
+    <p class="form-field">
+  <input type="text" required placeholder="enter your name"/>
+  </p> 
+  <p class="form-field">
+  <input type="text" required placeholder="enter your email id"/> 
+  </p>
+  <p>
+    <input type="password"required placeholder="enter your password">
+  </p>
+  <p class="form-radio">
+    <input type="radio" name="gender"/>male
+    <input type="radio"name="gender"/>female
+  </p>
+  <p class="form-field class=form-field">
+    <input type="date">
+  </p>
+  <p class="form-field">
+    <select>
+        <option value="">select your city</option>
+        <option value="">vijayawada</option>
+        <option value="">bantumilli</option>
+        <option value="">machilipatnam</option>
+        <option value="">gudivada</option>
+        <option value="">ongole</option>
+        <option value="">kavali</option>
+        <option value="">Egypt</option>
+    </select>
+  </p>
+  <p class="form-field">
+    <textarea required placeholder="enter your address"></textarea>
+  </p>
+    <button>submit</button>
+</form>
+</body>
+</html>
